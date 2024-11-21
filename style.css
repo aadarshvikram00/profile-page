@@ -1,0 +1,127 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000000;
+  color: white;
+}
+
+.profile-card {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+
+.name {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.location {
+  font-size: 1em;
+  color: #8fc743;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.9em;
+  color: #c3c3c3;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .profile-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .name {
+    font-size: 1.2em;
+  }
+
+  .description {
+    font-size: 0.8em;
+  }
+
+  .buttons .button {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+}
+
+/* Desktop view (1440px and above) */
+@media (min-width: 1440px) {
+  .profile-card {
+    width: 400px;
+    padding: 40px;
+  }
+
+  .name {
+    font-size: 2em;
+  }
+
+  .location {
+    font-size: 1.2em;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  .buttons .button {
+    padding: 12px;
+    font-size: 1em;
+  }
+}
